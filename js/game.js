@@ -48,18 +48,18 @@ let Game = class {
         for (let i = 0; i < this.size; i++) {
             for (let k = 0; k < this.size; k++) {
                new GameCell(fieldElement);
-                // // let cellElement = createAndAppend({
-                // //     className: 'game__cell',
-                // //     parent: fieldElement
-                // // });
-                // let cellElement = document.createElement('div');
-                // cellElement.classList.add('game__cell');
-                //
-                // if (Math.random() > 0.8) {
-                //     cellElement.innerHTML = Math.random() > `0.5` ? `4` : `2`;
-                // }
-                //
-                // fieldElement.appendChild(cellElement);
+                 // let cellElement = createAndAppend({
+                 //     className: 'game__cell',
+                 //     parent: fieldElement
+                 // });
+                 let cellElement = document.createElement('div');
+                 cellElement.classList.add('game__cell');
+                
+                 if (Math.random() > 0.8) {
+                     cellElement.innerHTML = Math.random() > `0.5` ? `4` : `2`;
+                 }
+                
+                 fieldElement.appendChild(cellElement);
             }
         }
     }
